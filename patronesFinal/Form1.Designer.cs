@@ -92,6 +92,7 @@ namespace patronesFinal
             this.bt_login.TabIndex = 3;
             this.bt_login.Text = "INICIAR SESION";
             this.bt_login.UseVisualStyleBackColor = false;
+            this.bt_login.Click += new System.EventHandler(this.bt_login_Click);
             // 
             // txb_user
             // 
