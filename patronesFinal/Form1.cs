@@ -21,5 +21,10 @@ namespace patronesFinal
         {
 
         }
+
+        private void bt_close_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }

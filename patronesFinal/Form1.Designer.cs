@@ -31,42 +31,45 @@ namespace patronesFinal
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.lb_nombre_banco = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pic_header = new System.Windows.Forms.PictureBox();
             this.lb_saludo_bienvenida = new System.Windows.Forms.Label();
             this.bt_login = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txb_user = new System.Windows.Forms.TextBox();
+            this.txb_pass = new System.Windows.Forms.TextBox();
             this.lb_User = new System.Windows.Forms.Label();
             this.lb_Password = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.pic_nav_bar = new System.Windows.Forms.PictureBox();
+            this.bt_close = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_header)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_nav_bar)).BeginInit();
             this.SuspendLayout();
             // 
             // lb_nombre_banco
             // 
             this.lb_nombre_banco.AutoSize = true;
-            this.lb_nombre_banco.Font = new System.Drawing.Font("Microsoft PhagsPa", 21.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_nombre_banco.Location = new System.Drawing.Point(12, 129);
+            this.lb_nombre_banco.Font = new System.Drawing.Font("Berlin Sans FB", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_nombre_banco.Location = new System.Drawing.Point(52, 141);
             this.lb_nombre_banco.Name = "lb_nombre_banco";
-            this.lb_nombre_banco.Size = new System.Drawing.Size(152, 38);
+            this.lb_nombre_banco.Size = new System.Drawing.Size(143, 32);
             this.lb_nombre_banco.TabIndex = 0;
             this.lb_nombre_banco.Text = "BANCOFY";
             this.lb_nombre_banco.Click += new System.EventHandler(this.label1_Click);
             // 
-            // pictureBox1
+            // pic_header
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(0, 1);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(245, 125);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
+            this.pic_header.Image = ((System.Drawing.Image)(resources.GetObject("pic_header.Image")));
+            this.pic_header.Location = new System.Drawing.Point(0, -1);
+            this.pic_header.Name = "pic_header";
+            this.pic_header.Size = new System.Drawing.Size(252, 125);
+            this.pic_header.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pic_header.TabIndex = 1;
+            this.pic_header.TabStop = false;
             // 
             // lb_saludo_bienvenida
             // 
             this.lb_saludo_bienvenida.AutoSize = true;
             this.lb_saludo_bienvenida.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_saludo_bienvenida.Location = new System.Drawing.Point(48, 192);
+            this.lb_saludo_bienvenida.Location = new System.Drawing.Point(48, 173);
             this.lb_saludo_bienvenida.Name = "lb_saludo_bienvenida";
             this.lb_saludo_bienvenida.Size = new System.Drawing.Size(157, 16);
             this.lb_saludo_bienvenida.TabIndex = 2;
@@ -77,60 +80,86 @@ namespace patronesFinal
             this.bt_login.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.bt_login.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.bt_login.Font = new System.Drawing.Font("Microsoft New Tai Lue", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_login.Location = new System.Drawing.Point(51, 334);
+            this.bt_login.Location = new System.Drawing.Point(51, 341);
             this.bt_login.Name = "bt_login";
             this.bt_login.Size = new System.Drawing.Size(144, 38);
             this.bt_login.TabIndex = 3;
             this.bt_login.Text = "INICIAR SESION";
             this.bt_login.UseVisualStyleBackColor = false;
             // 
-            // textBox1
+            // txb_user
             // 
-            this.textBox1.Location = new System.Drawing.Point(23, 237);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(195, 20);
-            this.textBox1.TabIndex = 4;
+            this.txb_user.Location = new System.Drawing.Point(36, 237);
+            this.txb_user.Name = "txb_user";
+            this.txb_user.Size = new System.Drawing.Size(169, 20);
+            this.txb_user.TabIndex = 4;
             // 
-            // textBox2
+            // txb_pass
             // 
-            this.textBox2.Location = new System.Drawing.Point(22, 290);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(195, 20);
-            this.textBox2.TabIndex = 5;
+            this.txb_pass.Location = new System.Drawing.Point(36, 290);
+            this.txb_pass.Name = "txb_pass";
+            this.txb_pass.Size = new System.Drawing.Size(169, 20);
+            this.txb_pass.TabIndex = 5;
             // 
             // lb_User
             // 
             this.lb_User.AutoSize = true;
-            this.lb_User.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_User.Location = new System.Drawing.Point(33, 221);
+            this.lb_User.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_User.Location = new System.Drawing.Point(33, 217);
             this.lb_User.Name = "lb_User";
-            this.lb_User.Size = new System.Drawing.Size(63, 13);
+            this.lb_User.Size = new System.Drawing.Size(62, 17);
             this.lb_User.TabIndex = 6;
             this.lb_User.Text = "USUARIO";
             // 
             // lb_Password
             // 
             this.lb_Password.AutoSize = true;
-            this.lb_Password.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_Password.Location = new System.Drawing.Point(33, 274);
+            this.lb_Password.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_Password.Location = new System.Drawing.Point(33, 270);
             this.lb_Password.Name = "lb_Password";
-            this.lb_Password.Size = new System.Drawing.Size(91, 13);
+            this.lb_Password.Size = new System.Drawing.Size(91, 17);
             this.lb_Password.TabIndex = 7;
             this.lb_Password.Text = "CONTRASEÑA";
+            // 
+            // pic_nav_bar
+            // 
+            this.pic_nav_bar.Image = ((System.Drawing.Image)(resources.GetObject("pic_nav_bar.Image")));
+            this.pic_nav_bar.Location = new System.Drawing.Point(0, 450);
+            this.pic_nav_bar.Name = "pic_nav_bar";
+            this.pic_nav_bar.Size = new System.Drawing.Size(252, 36);
+            this.pic_nav_bar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pic_nav_bar.TabIndex = 9;
+            this.pic_nav_bar.TabStop = false;
+            // 
+            // bt_close
+            // 
+            this.bt_close.BackColor = System.Drawing.Color.Transparent;
+            this.bt_close.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bt_close.BackgroundImage")));
+            this.bt_close.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bt_close.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.bt_close.Location = new System.Drawing.Point(0, 450);
+            this.bt_close.Name = "bt_close";
+            this.bt_close.Size = new System.Drawing.Size(252, 36);
+            this.bt_close.TabIndex = 10;
+            this.bt_close.UseVisualStyleBackColor = false;
+            this.bt_close.Click += new System.EventHandler(this.bt_close_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(245, 445);
+            this.BackColor = System.Drawing.SystemColors.Control;
+            this.ClientSize = new System.Drawing.Size(251, 486);
+            this.ControlBox = false;
+            this.Controls.Add(this.bt_close);
+            this.Controls.Add(this.pic_nav_bar);
             this.Controls.Add(this.lb_Password);
             this.Controls.Add(this.lb_User);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txb_pass);
+            this.Controls.Add(this.txb_user);
             this.Controls.Add(this.bt_login);
             this.Controls.Add(this.lb_saludo_bienvenida);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.pic_header);
             this.Controls.Add(this.lb_nombre_banco);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
@@ -138,7 +167,8 @@ namespace patronesFinal
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "BanCOFY";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_header)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_nav_bar)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -147,13 +177,15 @@ namespace patronesFinal
         #endregion
 
         private System.Windows.Forms.Label lb_nombre_banco;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pic_header;
         private System.Windows.Forms.Label lb_saludo_bienvenida;
         private System.Windows.Forms.Button bt_login;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txb_user;
+        private System.Windows.Forms.TextBox txb_pass;
         private System.Windows.Forms.Label lb_User;
         private System.Windows.Forms.Label lb_Password;
+        private System.Windows.Forms.PictureBox pic_nav_bar;
+        private System.Windows.Forms.Button bt_close;
     }
 }
 
