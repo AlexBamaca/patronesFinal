@@ -49,8 +49,17 @@ namespace patronesFinal
             //conecta.ConnectionString = "Data Source=CASA-PC\\MSSQLLocalDB;Initial Catalog=[C:\\USERS\\DELL CORE I3\\DOCUMENTS\\9-PATRONES\\PATRONESFINAL\\PATRONESFINAL\\DBPATRONES.MDF];Integrated Security=True;Connect Timeout=30;";
             ////conecta.Open();
 
-            //string user = txb_user.Text;
-            //string pass = txb_pass.Text;
+            string user = txb_user.Text;
+            string pass = txb_pass.Text;
+
+            if (user == "6642950131" && pass == "123456")
+            {
+                MessageBox.Show("Bienvenido de nuevo.");
+            }
+            else
+            {
+                MessageBox.Show("Error de inicio, verifique sus datos.");
+            }
 
             //SqlCommand consulta = new SqlCommand("select loginuser, pass from Users where loginuser='" + txb_user.Text + "' and pass='" + txb_pass.Text + "'", conecta);
             //SqlDataAdapter da = new SqlDataAdapter(consulta);
