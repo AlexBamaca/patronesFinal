@@ -29,7 +29,6 @@ namespace patronesFinal
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.lb_nombre_banco = new System.Windows.Forms.Label();
             this.pic_header = new System.Windows.Forms.PictureBox();
@@ -41,13 +40,8 @@ namespace patronesFinal
             this.lb_Password = new System.Windows.Forms.Label();
             this.pic_nav_bar = new System.Windows.Forms.PictureBox();
             this.bt_close = new System.Windows.Forms.Button();
-            this.dbPatronesDataSet = new patronesFinal.dbPatronesDataSet();
-            this.usersBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.usersTableAdapter = new patronesFinal.dbPatronesDataSetTableAdapters.UsersTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.pic_header)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_nav_bar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dbPatronesDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.usersBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // lb_nombre_banco
@@ -151,20 +145,6 @@ namespace patronesFinal
             this.bt_close.UseVisualStyleBackColor = false;
             this.bt_close.Click += new System.EventHandler(this.bt_close_Click);
             // 
-            // dbPatronesDataSet
-            // 
-            this.dbPatronesDataSet.DataSetName = "dbPatronesDataSet";
-            this.dbPatronesDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // usersBindingSource
-            // 
-            this.usersBindingSource.DataMember = "Users";
-            this.usersBindingSource.DataSource = this.dbPatronesDataSet;
-            // 
-            // usersTableAdapter
-            // 
-            this.usersTableAdapter.ClearBeforeFill = true;
-            // 
             // Form1
             // 
             this.AccessibleRole = System.Windows.Forms.AccessibleRole.TitleBar;
@@ -191,8 +171,6 @@ namespace patronesFinal
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pic_header)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_nav_bar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dbPatronesDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.usersBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -210,9 +188,6 @@ namespace patronesFinal
         private System.Windows.Forms.Label lb_Password;
         private System.Windows.Forms.PictureBox pic_nav_bar;
         private System.Windows.Forms.Button bt_close;
-        private dbPatronesDataSet dbPatronesDataSet;
-        private System.Windows.Forms.BindingSource usersBindingSource;
-        private dbPatronesDataSetTableAdapters.UsersTableAdapter usersTableAdapter;
     }
 }
 
