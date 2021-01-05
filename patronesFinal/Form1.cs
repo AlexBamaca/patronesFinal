@@ -56,7 +56,11 @@ namespace patronesFinal
             {
                 string nombre1;
                 nombre1 = "MANUEL";
-                MessageBox.Show("Bienvenido de nuevo.");
+
+                string mens = "Bienvenido de nuevo " + nombre1 + "!";
+                string title = "Hola de nuevo!";
+                MessageBox.Show(mens, title, MessageBoxButtons.OK, MessageBoxIcon.Information);
+
                 this.Hide();
                 Form3 F = new Form3(nombre1);
                 F.Show();
@@ -67,7 +71,10 @@ namespace patronesFinal
                 string nombre2;
                 nombre2 = "ESDRAS";
 
-                //MessageBox.Show();
+                string mens = "Bienvenido de nuevo " + nombre2 + "!";
+                string title = "Hola de nuevo!";
+                MessageBox.Show(mens, title, MessageBoxButtons.OK, MessageBoxIcon.Information);
+
                 this.Hide();
                 Form3 F = new Form3(nombre2);
                 F.Show();
