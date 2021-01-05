@@ -31,7 +31,7 @@ namespace patronesFinal
 
         private void bt_close_Click(object sender, EventArgs e)
         {
-            Close();
+            Application.Exit();
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -53,6 +53,14 @@ namespace patronesFinal
             string pass = txb_pass.Text;
 
             if (user == "6642950131" && pass == "123456")
+            {
+                MessageBox.Show("Bienvenido de nuevo.");
+                this.Hide();
+                Form3 F = new Form3();
+                F.Show();
+                
+            }
+            else if (user == "6644156623" && pass == "654321")
             {
                 MessageBox.Show("Bienvenido de nuevo.");
             }

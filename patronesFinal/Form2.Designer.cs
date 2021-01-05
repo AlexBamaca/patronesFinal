@@ -34,7 +34,7 @@ namespace patronesFinal
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(50, 63);
+            this.textBox1.Location = new System.Drawing.Point(58, 61);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(233, 144);
