@@ -12,9 +12,12 @@ namespace patronesFinal
 {
     public partial class Form3 : Form
     {
-        public Form3()
+        public Form3(string nombre)
         {
             InitializeComponent();
+
+            string Nomb = nombre;
+            lb_saludo_bienvenida.Text = "BIENVENIDO DE NUEVO " + Nomb; 
 
             float saldo = 2500;
             lbl_saldo.Text = "$ " + saldo + " MXN";
