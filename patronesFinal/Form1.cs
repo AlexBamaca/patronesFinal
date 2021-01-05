@@ -58,7 +58,7 @@ namespace patronesFinal
                 nombre1 = "MANUEL";
                 MessageBox.Show("Bienvenido de nuevo.");
                 this.Hide();
-                Form3 F = new Form3();
+                Form3 F = new Form3(nombre1);
                 F.Show();
                 
             }
@@ -66,9 +66,10 @@ namespace patronesFinal
             {
                 string nombre2;
                 nombre2 = "ESDRAS";
-                MessageBox.Show("Bienvenido de nuevo.");
+
+                MessageBox.Show();
                 this.Hide();
-                Form3 F = new Form3();
+                Form3 F = new Form3(nombre2);
                 F.Show();
             }
             else
