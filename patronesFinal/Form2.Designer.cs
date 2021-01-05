@@ -42,9 +42,11 @@ namespace patronesFinal
             // 
             // Form2
             // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.ClientSize = new System.Drawing.Size(335, 569);
             this.Controls.Add(this.textBox1);
             this.Name = "Form2";
+            this.Controls.SetChildIndex(this.textBox1, 0);
             this.ResumeLayout(false);
             this.PerformLayout();
 
