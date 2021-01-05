@@ -40,8 +40,10 @@ namespace patronesFinal
             this.lb_Password = new System.Windows.Forms.Label();
             this.pic_nav_bar = new System.Windows.Forms.PictureBox();
             this.bt_close = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pic_header)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_nav_bar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // lb_nombre_banco
@@ -146,6 +148,16 @@ namespace patronesFinal
             this.bt_close.UseVisualStyleBackColor = false;
             this.bt_close.Click += new System.EventHandler(this.bt_close_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.Location = new System.Drawing.Point(-19, 394);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(287, 60);
+            this.pictureBox1.TabIndex = 11;
+            this.pictureBox1.TabStop = false;
+            // 
             // Form1
             // 
             this.AcceptButton = this.bt_login;
@@ -156,6 +168,7 @@ namespace patronesFinal
             this.ClientSize = new System.Drawing.Size(251, 486);
             this.ControlBox = false;
             this.Controls.Add(this.bt_close);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pic_nav_bar);
             this.Controls.Add(this.lb_Password);
             this.Controls.Add(this.lb_User);
@@ -173,6 +186,7 @@ namespace patronesFinal
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pic_header)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_nav_bar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -190,6 +204,7 @@ namespace patronesFinal
         private System.Windows.Forms.Label lb_Password;
         private System.Windows.Forms.PictureBox pic_nav_bar;
         private System.Windows.Forms.Button bt_close;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 
