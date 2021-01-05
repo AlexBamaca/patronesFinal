@@ -17,7 +17,7 @@ namespace patronesFinal
             InitializeComponent();
 
             string Nomb = nombre;
-            lb_saludo_bienvenida.Text = "BIENVENIDO DE NUEVO " + Nomb; 
+            lbl_saludo_b.Text = "BIENVENIDO DE NUEVO " + Nomb; 
 
             float saldo = 2500;
             lbl_saldo.Text = "$ " + saldo + " MXN";
@@ -38,6 +38,14 @@ namespace patronesFinal
 
         private void Form3_Load(object sender, EventArgs e)
         {
+
+        }
+
+        private void bt_return_Click(object sender, EventArgs e)
+        {
+            Form1 F = new Form1();
+            this.Hide();
+            F.Show();
 
         }
     }

@@ -101,6 +101,7 @@ namespace patronesFinal
             this.txb_pass.Name = "txb_pass";
             this.txb_pass.Size = new System.Drawing.Size(169, 20);
             this.txb_pass.TabIndex = 5;
+            this.txb_pass.UseSystemPasswordChar = true;
             // 
             // lb_User
             // 
