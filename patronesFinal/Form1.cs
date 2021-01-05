@@ -19,7 +19,7 @@ namespace patronesFinal
 
         public Form1()
         {
-            //InitializeComponent();
+            InitializeComponent();
             //SqlConnection conecta = new SqlConnection();
             //conecta.ConnectionString = "Data Source=CASA-PC\\MSSQLLocalDB;Initial Catalog=[C:\\USERS\\DELL CORE I3\\DOCUMENTS\\9-PATRONES\\PATRONESFINAL\\PATRONESFINAL\\DBPATRONES.MDF];Integrated Security=True;Connect Timeout=30;";
         }
