@@ -15,6 +15,9 @@ namespace patronesFinal
         public Form3()
         {
             InitializeComponent();
+
+            float saldo = 2500;
+            lbl_saldo.Text = "$ " + saldo + " MXN";
         }
 
         private void bt_close_Click(object sender, EventArgs e)
