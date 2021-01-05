@@ -30,23 +30,25 @@ namespace patronesFinal
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form3));
-            this.button4 = new System.Windows.Forms.Button();
+            this.bt_return = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // button4
+            // bt_return
             // 
-            this.button4.Location = new System.Drawing.Point(73, 113);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
-            this.button4.TabIndex = 0;
-            this.button4.Text = "button4";
-            this.button4.UseVisualStyleBackColor = true;
+            this.bt_return.BackColor = System.Drawing.Color.Transparent;
+            this.bt_return.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bt_return.BackgroundImage")));
+            this.bt_return.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bt_return.Location = new System.Drawing.Point(0, 450);
+            this.bt_return.Name = "bt_return";
+            this.bt_return.Size = new System.Drawing.Size(252, 36);
+            this.bt_return.TabIndex = 0;
+            this.bt_return.UseVisualStyleBackColor = false;
             // 
             // Form3
             // 
             this.ClientSize = new System.Drawing.Size(251, 486);
             this.ControlBox = false;
-            this.Controls.Add(this.button4);
+            this.Controls.Add(this.bt_return);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form3";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -65,6 +67,6 @@ namespace patronesFinal
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button bt_return;
     }
 }
