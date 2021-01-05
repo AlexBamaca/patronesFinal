@@ -37,6 +37,9 @@ namespace patronesFinal
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
@@ -68,7 +71,7 @@ namespace patronesFinal
             // 
             this.lbl_saldo.AutoSize = true;
             this.lbl_saldo.Font = new System.Drawing.Font("Berlin Sans FB", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_saldo.Location = new System.Drawing.Point(56, 122);
+            this.lbl_saldo.Location = new System.Drawing.Point(53, 150);
             this.lbl_saldo.Name = "lbl_saldo";
             this.lbl_saldo.Size = new System.Drawing.Size(152, 32);
             this.lbl_saldo.TabIndex = 2;
@@ -77,18 +80,18 @@ namespace patronesFinal
             // lbl_saludo_b
             // 
             this.lbl_saludo_b.AutoSize = true;
-            this.lbl_saludo_b.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_saludo_b.Location = new System.Drawing.Point(13, 78);
+            this.lbl_saludo_b.Font = new System.Drawing.Font("Microsoft Tai Le", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_saludo_b.Location = new System.Drawing.Point(12, 67);
             this.lbl_saludo_b.Name = "lbl_saludo_b";
-            this.lbl_saludo_b.Size = new System.Drawing.Size(45, 16);
+            this.lbl_saludo_b.Size = new System.Drawing.Size(142, 16);
             this.lbl_saludo_b.TabIndex = 3;
-            this.lbl_saludo_b.Text = "label3";
+            this.lbl_saludo_b.Text = "BIENVENIDO DE NUEVO";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Tai Le", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(13, 98);
+            this.label3.Location = new System.Drawing.Point(13, 120);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(129, 16);
             this.label3.TabIndex = 4;
@@ -99,7 +102,7 @@ namespace patronesFinal
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Honeydew;
             this.label4.Font = new System.Drawing.Font("Berlin Sans FB", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(9, 28);
+            this.label4.Location = new System.Drawing.Point(9, 37);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(133, 30);
             this.label4.TabIndex = 5;
@@ -115,10 +118,44 @@ namespace patronesFinal
             this.pictureBox2.TabIndex = 6;
             this.pictureBox2.TabStop = false;
             // 
+            // button4
+            // 
+            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.Location = new System.Drawing.Point(16, 252);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(223, 50);
+            this.button4.TabIndex = 0;
+            this.button4.Text = "RETIRAR EFECTIVO";
+            this.button4.UseVisualStyleBackColor = true;
+            // 
+            // button5
+            // 
+            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.Location = new System.Drawing.Point(16, 318);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(99, 41);
+            this.button5.TabIndex = 0;
+            this.button5.Text = "TRANSFERIR";
+            this.button5.UseVisualStyleBackColor = true;
+            // 
+            // button6
+            // 
+            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button6.Location = new System.Drawing.Point(140, 318);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(99, 41);
+            this.button6.TabIndex = 0;
+            this.button6.Text = "PAGAR SERVICIO";
+            this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
+            // 
             // Form3
             // 
             this.ClientSize = new System.Drawing.Size(251, 486);
             this.ControlBox = false;
+            this.Controls.Add(this.button6);
+            this.Controls.Add(this.button5);
+            this.Controls.Add(this.button4);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.label3);
@@ -154,5 +191,8 @@ namespace patronesFinal
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button button6;
     }
 }

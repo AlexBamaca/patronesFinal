@@ -48,5 +48,12 @@ namespace patronesFinal
             F.Show();
 
         }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            string mens = "Encontraste un servicio que se encuentra en mantenimiento, intenta en unas horas mas tarde.";
+            string title = "Oops... I did it again.";
+            MessageBox.Show(mens, title, MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
     }
 }
