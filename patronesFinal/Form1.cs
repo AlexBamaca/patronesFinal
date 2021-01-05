@@ -63,6 +63,9 @@ namespace patronesFinal
             else if (user == "6644156623" && pass == "654321")
             {
                 MessageBox.Show("Bienvenido de nuevo.");
+                this.Hide();
+                Form3 F = new Form3();
+                F.Show();
             }
             else
             {
