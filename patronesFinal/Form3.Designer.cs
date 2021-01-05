@@ -30,12 +30,23 @@ namespace patronesFinal
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form3));
+            this.button4 = new System.Windows.Forms.Button();
             this.SuspendLayout();
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(73, 113);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(75, 23);
+            this.button4.TabIndex = 0;
+            this.button4.Text = "button4";
+            this.button4.UseVisualStyleBackColor = true;
             // 
             // Form3
             // 
-            this.ClientSize = new System.Drawing.Size(251, 463);
+            this.ClientSize = new System.Drawing.Size(251, 486);
             this.ControlBox = false;
+            this.Controls.Add(this.button4);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form3";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -54,5 +65,6 @@ namespace patronesFinal
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button4;
     }
 }
