@@ -20,7 +20,7 @@ namespace patronesFinal
             lbl_saludo_b.Text = "BIENVENIDO DE NUEVO " + Nomb; 
 
             float saldo = 2500;
-            lbl_saldo.Text = "$ " + saldo + " MXN";
+            lbl_saldo.Text = "$ " + saldo;
         }
 
         private void bt_close_Click(object sender, EventArgs e)

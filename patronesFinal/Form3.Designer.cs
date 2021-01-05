@@ -40,6 +40,7 @@ namespace patronesFinal
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
@@ -71,11 +72,11 @@ namespace patronesFinal
             // 
             this.lbl_saldo.AutoSize = true;
             this.lbl_saldo.Font = new System.Drawing.Font("Berlin Sans FB", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_saldo.Location = new System.Drawing.Point(53, 150);
+            this.lbl_saldo.Location = new System.Drawing.Point(70, 150);
             this.lbl_saldo.Name = "lbl_saldo";
-            this.lbl_saldo.Size = new System.Drawing.Size(152, 32);
+            this.lbl_saldo.Size = new System.Drawing.Size(84, 32);
             this.lbl_saldo.TabIndex = 2;
-            this.lbl_saldo.Text = "$ ).00 MXN";
+            this.lbl_saldo.Text = "$ ).00";
             // 
             // lbl_saludo_b
             // 
@@ -149,10 +150,21 @@ namespace patronesFinal
             this.button6.UseVisualStyleBackColor = true;
             this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Berlin Sans FB", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(173, 186);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(33, 15);
+            this.label5.TabIndex = 7;
+            this.label5.Text = "MXN";
+            // 
             // Form3
             // 
             this.ClientSize = new System.Drawing.Size(251, 486);
             this.ControlBox = false;
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
@@ -194,5 +206,6 @@ namespace patronesFinal
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Label label5;
     }
 }
