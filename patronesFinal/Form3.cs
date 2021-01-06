@@ -12,6 +12,7 @@ namespace patronesFinal
 {
     public partial class Form3 : Form
     {
+        Cuenta C = new Cuenta();
 
         public Form3(string nombre)
         {
@@ -20,7 +21,8 @@ namespace patronesFinal
             string Nomb = nombre;
             lbl_saludo_b.Text = "BIENVENIDO DE NUEVO " + Nomb; 
             
-            lbl_saldo.Text = saldo.ToString("C2");
+
+            lbl_saldo.Text = C.Saldo.ToString("C2");
         }
 
         private void bt_close_Click(object sender, EventArgs e)
@@ -60,7 +62,7 @@ namespace patronesFinal
         {
             //llamando a la forma de retiro de efectivo.
 
-            Form4 F = new Form4(saldo);
+            Form4 F = new Form4();
             this.Hide();
             F.Show();
         }
