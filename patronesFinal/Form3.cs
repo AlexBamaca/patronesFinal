@@ -14,7 +14,7 @@ namespace patronesFinal
     {
         Cuenta C = new Cuenta();
 
-        public Form3(string nombre)
+        public Form3()
         {
             InitializeComponent();
 

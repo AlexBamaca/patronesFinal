@@ -52,31 +52,29 @@ namespace patronesFinal
             string user = txb_user.Text;
             string pass = txb_pass.Text;
 
+            Cuenta N = new Cuenta();
+
             if (user == "6642950131" && pass == "123456")
             {
-                string nombre1;
-                nombre1 = "MANUEL";
 
-                string mens = "Bienvenido de nuevo " + nombre1 + "!";
+                string mens = "Bienvenido de nuevo " + N.NombreM + "!";
                 string title = "Hola de nuevo!";
                 MessageBox.Show(mens, title, MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 this.Hide();
-                Form3 F = new Form3(nombre1);
+                Form3 F = new Form3();
                 F.Show();
                 
             }
             else if (user == "6644156623" && pass == "654321")
             {
-                string nombre2;
-                nombre2 = "ESDRAS";
 
-                string mens = "Bienvenido de nuevo " + nombre2 + "!";
+                string mens = "Bienvenido de nuevo " + N.NombreE + "!";
                 string title = "Hola de nuevo!";
                 MessageBox.Show(mens, title, MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 this.Hide();
-                Form3 F = new Form3(nombre2);
+                Form3 F = new Form3();
                 F.Show();
             }
             else

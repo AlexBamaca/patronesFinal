@@ -15,5 +15,19 @@ namespace patronesFinal
             get { return saldo; }
             set { saldo = value; }
         }
+
+        string nombreE = "Esdras";
+
+        public string NombreE
+        {
+            get { return nombreE; }
+            set { nombreE = value; }
+        }
+
+        string nombreM = "Manuel";
+        public string NombreM
+        {
+            get { return nombreM; }
+            set { nombreM = value; }
     }
 }
