@@ -12,7 +12,6 @@ namespace patronesFinal
 {
     public partial class Form3 : Form
     {
-        float saldo = 2500;
 
         public Form3(string nombre)
         {
