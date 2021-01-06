@@ -29,5 +29,14 @@ namespace patronesFinal
         {
             get { return nombreM; }
             set { nombreM = value; }
+        }
+
+        string user;
+
+        public string User
+        {
+            get { return user; }
+            set { user = value; }
+        }
     }
 }

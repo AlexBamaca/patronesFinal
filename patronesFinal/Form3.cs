@@ -18,11 +18,23 @@ namespace patronesFinal
         {
             InitializeComponent();
 
-            string Nomb = nombre;
-            lbl_saludo_b.Text = "BIENVENIDO DE NUEVO " + Nomb; 
-            
+            if ("6642950131" == C.User)
+            {
+                string Nomb;
+                Nomb = C.NombreM.ToUpper();
+                lbl_saludo_b.Text = "BIENVENIDO DE NUEVO " + Nomb;
+            }
+            else if (C.User == "6644156623")
+            {
+                string Nomb;
+                Nomb = C.NombreE.ToUpper();
+                lbl_saludo_b.Text = "BIENVENIDO DE NUEVO " + Nomb;
+            }
+            else
+            { MessageBox.Show("Se encontro un error al cargar los datos."); }
 
             lbl_saldo.Text = C.Saldo.ToString("C2");
+
         }
 
         private void bt_close_Click(object sender, EventArgs e)
