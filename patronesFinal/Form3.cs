@@ -12,14 +12,15 @@ namespace patronesFinal
 {
     public partial class Form3 : Form
     {
+        float saldo = 2500;
+
         public Form3(string nombre)
         {
             InitializeComponent();
 
             string Nomb = nombre;
             lbl_saludo_b.Text = "BIENVENIDO DE NUEVO " + Nomb; 
-
-            float saldo = 2500;
+            
             lbl_saldo.Text = saldo.ToString("C2");
         }
 
@@ -54,6 +55,15 @@ namespace patronesFinal
             string mens = "Encontraste un servicio que se encuentra en mantenimiento, intenta en unas horas mas tarde.";
             string title = "Oops... I did it again.";
             MessageBox.Show(mens, title, MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            //llamando a la forma de retiro de efectivo.
+
+            Form4 F = new Form4(saldo);
+            this.Hide();
+            F.Show();
         }
     }
 }
