@@ -72,7 +72,7 @@ namespace patronesFinal
             // 
             this.lbl_saldo.AutoSize = true;
             this.lbl_saldo.Font = new System.Drawing.Font("Berlin Sans FB", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_saldo.Location = new System.Drawing.Point(70, 150);
+            this.lbl_saldo.Location = new System.Drawing.Point(83, 135);
             this.lbl_saldo.Name = "lbl_saldo";
             this.lbl_saldo.Size = new System.Drawing.Size(84, 32);
             this.lbl_saldo.TabIndex = 2;
@@ -82,7 +82,7 @@ namespace patronesFinal
             // 
             this.lbl_saludo_b.AutoSize = true;
             this.lbl_saludo_b.Font = new System.Drawing.Font("Microsoft Tai Le", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_saludo_b.Location = new System.Drawing.Point(12, 67);
+            this.lbl_saludo_b.Location = new System.Drawing.Point(0, 61);
             this.lbl_saludo_b.Name = "lbl_saludo_b";
             this.lbl_saludo_b.Size = new System.Drawing.Size(142, 16);
             this.lbl_saludo_b.TabIndex = 3;
@@ -92,7 +92,7 @@ namespace patronesFinal
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Tai Le", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(13, 120);
+            this.label3.Location = new System.Drawing.Point(13, 107);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(129, 16);
             this.label3.TabIndex = 4;
@@ -103,7 +103,7 @@ namespace patronesFinal
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Honeydew;
             this.label4.Font = new System.Drawing.Font("Berlin Sans FB", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(9, 37);
+            this.label4.Location = new System.Drawing.Point(9, 19);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(133, 30);
             this.label4.TabIndex = 5;
