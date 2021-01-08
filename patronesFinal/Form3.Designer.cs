@@ -70,7 +70,6 @@ namespace patronesFinal
             // 
             // lbl_saldo
             // 
-            this.lbl_saldo.AutoSize = true;
             this.lbl_saldo.Font = new System.Drawing.Font("Berlin Sans FB", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_saldo.Location = new System.Drawing.Point(83, 135);
             this.lbl_saldo.Name = "lbl_saldo";
