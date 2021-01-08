@@ -78,5 +78,10 @@ namespace patronesFinal
             this.Hide();
             F.Show();
         }
+
+        private void button4_Click_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }

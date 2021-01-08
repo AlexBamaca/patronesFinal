@@ -12,6 +12,8 @@ namespace patronesFinal
 {
     public partial class Form4 : Form
     {
+        Cuenta D = new Cuenta();
+
         public Form4()
         {
             InitializeComponent();
@@ -27,6 +29,12 @@ namespace patronesFinal
         private void button1_Click(object sender, EventArgs e)
         {
 
+
+        }
+
+        private void Form4_Load(object sender, EventArgs e)
+        {
+            
         }
     }
 }
