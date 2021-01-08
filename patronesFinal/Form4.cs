@@ -55,6 +55,7 @@ namespace patronesFinal
 
         private void Form4_Load(object sender, EventArgs e)
         {
+            tbRetirar.Focus();
             float Condicion = D.Saldo;
             if (Condicion <= 0)
             { button1.Enabled = false; }     
