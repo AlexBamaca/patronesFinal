@@ -73,14 +73,21 @@ namespace patronesFinal
         private void button4_Click(object sender, EventArgs e)
         {
             //llamando a la forma de retiro de efectivo.
-            Form4 Retiro = new Form4();
-
-            Retiro.Show();
+            
         }
 
         private void button4_Click_1(object sender, EventArgs e)
         {
+            Form4 Retiro = new Form4();
 
+            Retiro.Show();
+
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Form5 Transferir = new Form5();
+            Transferir.Show();
         }
     }
 }
