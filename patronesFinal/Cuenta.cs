@@ -31,7 +31,7 @@ namespace patronesFinal
             set { nombreM = value; }
         }
 
-        string user;
+        string user = "";
 
         public string User
         {

@@ -52,7 +52,7 @@ namespace patronesFinal
 
         private void Form3_Load(object sender, EventArgs e)
         {
-
+            button4.Focus();
         }
 
         private void bt_return_Click(object sender, EventArgs e)
