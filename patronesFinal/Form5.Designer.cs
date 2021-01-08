@@ -210,6 +210,7 @@ namespace patronesFinal
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.bt_return);
             this.Controls.Add(this.pictureBox1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form5";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
