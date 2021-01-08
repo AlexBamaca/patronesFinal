@@ -21,9 +21,7 @@ namespace patronesFinal
 
         private void bt_return_Click(object sender, EventArgs e)
         {
-            Form3 F = new Form3();
-            this.Hide();
-            F.Show();
+            this.Close();
         }
 
         private void button1_Click(object sender, EventArgs e)

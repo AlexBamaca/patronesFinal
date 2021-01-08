@@ -16,5 +16,10 @@ namespace patronesFinal
         {
             InitializeComponent();
         }
+
+        private void bt_return_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
