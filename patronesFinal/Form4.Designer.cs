@@ -39,6 +39,7 @@ namespace patronesFinal
             this.lbl_saldo = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.tbRetirar = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -110,13 +111,13 @@ namespace patronesFinal
             // 
             // lbl_saldo
             // 
-            this.lbl_saldo.AutoSize = true;
             this.lbl_saldo.Font = new System.Drawing.Font("Berlin Sans FB", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_saldo.Location = new System.Drawing.Point(85, 127);
+            this.lbl_saldo.Location = new System.Drawing.Point(14, 104);
             this.lbl_saldo.Name = "lbl_saldo";
-            this.lbl_saldo.Size = new System.Drawing.Size(84, 32);
+            this.lbl_saldo.Size = new System.Drawing.Size(225, 55);
             this.lbl_saldo.TabIndex = 13;
             this.lbl_saldo.Text = "$ ).00";
+            this.lbl_saldo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label5
             // 
@@ -131,12 +132,22 @@ namespace patronesFinal
             // tbRetirar
             // 
             this.tbRetirar.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbRetirar.Location = new System.Drawing.Point(40, 233);
+            this.tbRetirar.Location = new System.Drawing.Point(44, 244);
             this.tbRetirar.Multiline = true;
             this.tbRetirar.Name = "tbRetirar";
             this.tbRetirar.Size = new System.Drawing.Size(176, 31);
             this.tbRetirar.TabIndex = 15;
             this.tbRetirar.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(24, 225);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(135, 16);
+            this.label2.TabIndex = 16;
+            this.label2.Text = "Cuando desea retirar?";
             // 
             // Form4
             // 
@@ -144,6 +155,7 @@ namespace patronesFinal
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(251, 486);
             this.ControlBox = false;
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.tbRetirar);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.lbl_saldo);
@@ -175,5 +187,6 @@ namespace patronesFinal
         private System.Windows.Forms.Label lbl_saldo;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox tbRetirar;
+        private System.Windows.Forms.Label label2;
     }
 }
