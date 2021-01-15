@@ -73,11 +73,13 @@ namespace patronesFinal
 
         private void textBox2Cantidad_TextChanged(object sender, EventArgs e)
         {
+            //aqui PUEDE ir cambiando el memento cuando se introduce texto, por el textchanged.
 
         }
 
         private void textBox1Concepto_TextChanged(object sender, EventArgs e)
         {
+            //aqui PUEDE ir cambiando el memento cuando se introduce texto, por el textchanged.
 
         }
     }
