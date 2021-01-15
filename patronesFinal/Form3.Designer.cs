@@ -71,11 +71,12 @@ namespace patronesFinal
             // lbl_saldo
             // 
             this.lbl_saldo.Font = new System.Drawing.Font("Berlin Sans FB", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_saldo.Location = new System.Drawing.Point(83, 135);
+            this.lbl_saldo.Location = new System.Drawing.Point(16, 123);
             this.lbl_saldo.Name = "lbl_saldo";
-            this.lbl_saldo.Size = new System.Drawing.Size(84, 32);
+            this.lbl_saldo.Size = new System.Drawing.Size(223, 63);
             this.lbl_saldo.TabIndex = 2;
             this.lbl_saldo.Text = "$ ).00";
+            this.lbl_saldo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lbl_saludo_b
             // 

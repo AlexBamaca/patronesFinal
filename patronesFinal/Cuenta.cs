@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace patronesFinal
 {
-    class Cuenta
+    public class Cuenta
     {
         float saldo = 2500;
 

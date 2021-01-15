@@ -10,8 +10,18 @@ using System.Windows.Forms;
 
 namespace patronesFinal
 {
+
+
     public partial class Form3 : Form
     {
+        private float saldo = 2500;
+
+        public float Saldo
+        {
+            get { return saldo; }
+            set { saldo = value; }
+        }
+
         Cuenta C = new Cuenta();
 
         public Form3()
@@ -33,7 +43,7 @@ namespace patronesFinal
             else
             { MessageBox.Show("Se encontro un error al cargar los datos."); }
 
-            lbl_saldo.Text = C.Saldo.ToString("C2");
+            lbl_saldo.Text = Saldo.ToString("C2");
 
         }
 

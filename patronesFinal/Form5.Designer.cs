@@ -100,6 +100,7 @@ namespace patronesFinal
             this.textBox1Concepto.Name = "textBox1Concepto";
             this.textBox1Concepto.Size = new System.Drawing.Size(192, 36);
             this.textBox1Concepto.TabIndex = 15;
+            this.textBox1Concepto.TextChanged += new System.EventHandler(this.textBox1Concepto_TextChanged);
             // 
             // btEnviar
             // 
@@ -128,6 +129,7 @@ namespace patronesFinal
             this.textBox2Cantidad.Name = "textBox2Cantidad";
             this.textBox2Cantidad.Size = new System.Drawing.Size(100, 20);
             this.textBox2Cantidad.TabIndex = 18;
+            this.textBox2Cantidad.TextChanged += new System.EventHandler(this.textBox2Cantidad_TextChanged);
             // 
             // textBox3Tarjeta
             // 
@@ -135,6 +137,7 @@ namespace patronesFinal
             this.textBox3Tarjeta.Name = "textBox3Tarjeta";
             this.textBox3Tarjeta.Size = new System.Drawing.Size(192, 20);
             this.textBox3Tarjeta.TabIndex = 19;
+            this.textBox3Tarjeta.TextChanged += new System.EventHandler(this.textBox3Tarjeta_TextChanged);
             // 
             // label1
             // 
@@ -188,10 +191,10 @@ namespace patronesFinal
             // 
             // label7
             // 
-            this.label7.Font = new System.Drawing.Font("Berlin Sans FB", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(14, 110);
+            this.label7.Font = new System.Drawing.Font("Berlin Sans FB", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(14, 101);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(209, 28);
+            this.label7.Size = new System.Drawing.Size(209, 63);
             this.label7.TabIndex = 25;
             this.label7.Text = "$ ).00 MXN";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
