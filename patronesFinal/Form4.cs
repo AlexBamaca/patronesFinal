@@ -24,7 +24,10 @@ namespace patronesFinal
 
         private void bt_return_Click(object sender, EventArgs e)
         {
+            Form3 General = new Form3();
+            General.Show();
             this.Close();
+            
         }
 
         private void button1_Click(object sender, EventArgs e)

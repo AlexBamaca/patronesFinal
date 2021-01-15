@@ -13,16 +13,51 @@ namespace patronesFinal
     public partial class Form5 : Form
     {
         float saldo = 2500;
-
+        
         public Form5()
         {
             InitializeComponent();
             label7.Text = "$ " + saldo.ToString() + " MXN";
+
+            textBox3Tarjeta.Text = objetoMemento.NTarjeta;
+            textBox2Cantidad.Text = objetoMemento.Cantidad;
+            textBox1Concepto.Text = objetoMemento.Concepto;
         }
+
+        Memento objetoMemento = new Memento
+        {
+             
+            NTarjeta = "",
+            Cantidad = "",
+            Concepto = "",
+            Copia = new MementoCopia
+            {
+                NTarjeta = "",
+                Cantidad = "",
+                Concepto = ""
+            }
+        };
 
         private void bt_return_Click(object sender, EventArgs e)
         {
-            this.Close();
+            objetoMemento.NTarjeta = textBox3Tarjeta.Text;
+            objetoMemento.Cantidad = textBox2Cantidad.Text;
+            objetoMemento.Concepto = textBox1Concepto.Text;
+            if (objetoMemento.IsModified())
+            {
+                objetoMemento.Copia.NTarjeta = objetoMemento.NTarjeta;
+                objetoMemento.Copia.Cantidad = objetoMemento.Cantidad;
+                objetoMemento.Copia.Concepto = objetoMemento.Concepto;
+            }
+            MostrarDatos();
+            this.Hide();
+        }
+
+        private void MostrarDatos()
+        {
+            textBox3Tarjeta.Text = objetoMemento.NTarjeta;
+            textBox2Cantidad.Text = objetoMemento.Cantidad;
+            textBox1Concepto.Text = objetoMemento.Concepto;
         }
 
         private void btEnviar_Click(object sender, EventArgs e)
@@ -68,19 +103,27 @@ namespace patronesFinal
         private void textBox3Tarjeta_TextChanged(object sender, EventArgs e)
         {
             //aqui PUEDE ir cambiando el memento cuando se introduce texto, por el textchanged.
-
+            objetoMemento.NTarjeta = textBox3Tarjeta.Text;
+            objetoMemento.Copia.NTarjeta = textBox3Tarjeta.Text;
         }
 
         private void textBox2Cantidad_TextChanged(object sender, EventArgs e)
         {
             //aqui PUEDE ir cambiando el memento cuando se introduce texto, por el textchanged.
-
+            objetoMemento.Cantidad = textBox2Cantidad.Text;
+            objetoMemento.Copia.Cantidad = textBox2Cantidad.Text;
         }
 
         private void textBox1Concepto_TextChanged(object sender, EventArgs e)
         {
             //aqui PUEDE ir cambiando el memento cuando se introduce texto, por el textchanged.
+            objetoMemento.Concepto = textBox1Concepto.Text;
+            objetoMemento.Copia.Concepto = textBox1Concepto.Text;
+        }
 
+        private void Form5_Load(object sender, EventArgs e)
+        {
+            MostrarDatos();
         }
     }
 }
