@@ -47,7 +47,6 @@ namespace patronesFinal
 
             if (user == "6642950131" && pass == "123456")
             {
-                N.User = user;
                 string mens = "Bienvenido de nuevo " + N.NombreM + "!";
                 string title = "Hola de nuevo!";
                 MessageBox.Show(mens, title, MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -59,7 +58,6 @@ namespace patronesFinal
             }
             else if (user == "6644156623" && pass == "654321")
             {
-                N.User = user;
                 string mens = "Bienvenido de nuevo " + N.NombreE + "!";
                 string title = "Hola de nuevo!";
                 MessageBox.Show(mens, title, MessageBoxButtons.OK, MessageBoxIcon.Information);

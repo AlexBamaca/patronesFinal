@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace patronesFinal
 {
-    class pagar
+    public class Fachada
     {
-
+        
     }
 }

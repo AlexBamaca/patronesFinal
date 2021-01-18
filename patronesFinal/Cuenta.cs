@@ -6,9 +6,15 @@ using System.Threading.Tasks;
 
 namespace patronesFinal
 {
-    public class Cuenta
+    public interface ICuenta
     {
-        float saldo = 2500;
+        float Saldo { get; set; }
+        string NombreE { get; set; }
+        string NombreM { get; set; }
+    }
+    public class Cuenta : ICuenta
+    {
+        private float saldo = 2500;
 
         public float Saldo
         {
@@ -16,7 +22,7 @@ namespace patronesFinal
             set { saldo = value; }
         }
 
-        string nombreE = "Esdras";
+        private string nombreE = "Esdras";
 
         public string NombreE
         {
@@ -24,19 +30,11 @@ namespace patronesFinal
             set { nombreE = value; }
         }
 
-        string nombreM = "Manuel";
+        private string nombreM = "Manuel";
         public string NombreM
         {
             get { return nombreM; }
             set { nombreM = value; }
-        }
-
-        string user = "";
-
-        public string User
-        {
-            get { return user; }
-            set { user = value; }
         }
     }
 }

@@ -93,7 +93,7 @@ namespace patronesFinal
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Location = new System.Drawing.Point(70, 302);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(117, 39);
+            this.button1.Size = new System.Drawing.Size(113, 39);
             this.button1.TabIndex = 11;
             this.button1.Text = "RETIRAR";
             this.button1.UseVisualStyleBackColor = true;
@@ -108,6 +108,7 @@ namespace patronesFinal
             this.label1.Size = new System.Drawing.Size(128, 15);
             this.label1.TabIndex = 12;
             this.label1.Text = "Tu saldo actual es:";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // lbl_saldo
             // 
@@ -135,9 +136,10 @@ namespace patronesFinal
             this.tbRetirar.Location = new System.Drawing.Point(44, 244);
             this.tbRetirar.Multiline = true;
             this.tbRetirar.Name = "tbRetirar";
-            this.tbRetirar.Size = new System.Drawing.Size(176, 31);
+            this.tbRetirar.Size = new System.Drawing.Size(172, 31);
             this.tbRetirar.TabIndex = 15;
             this.tbRetirar.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbRetirar.TextChanged += new System.EventHandler(this.tbRetirar_TextChanged);
             // 
             // label2
             // 
@@ -148,12 +150,13 @@ namespace patronesFinal
             this.label2.Size = new System.Drawing.Size(135, 16);
             this.label2.TabIndex = 16;
             this.label2.Text = "Cuando desea retirar?";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // Form4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(251, 486);
+            this.ClientSize = new System.Drawing.Size(247, 486);
             this.ControlBox = false;
             this.Controls.Add(this.label2);
             this.Controls.Add(this.tbRetirar);

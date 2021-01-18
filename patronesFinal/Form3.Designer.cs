@@ -50,6 +50,10 @@ namespace patronesFinal
             this.bt_return_general = new System.Windows.Forms.Button();
             this.label6Cantidad = new System.Windows.Forms.Label();
             this.label6Concepto = new System.Windows.Forms.Label();
+            this.tbRetirar = new System.Windows.Forms.TextBox();
+            this.button4 = new System.Windows.Forms.Button();
+            this.label6 = new System.Windows.Forms.Label();
+            this.bt_return_retiros_a_inicio = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
@@ -84,8 +88,9 @@ namespace patronesFinal
             this.lbl_saldo.Name = "lbl_saldo";
             this.lbl_saldo.Size = new System.Drawing.Size(223, 63);
             this.lbl_saldo.TabIndex = 2;
-            this.lbl_saldo.Text = "$ ).00";
+            this.lbl_saldo.Text = "$ 0.00";
             this.lbl_saldo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl_saldo.Click += new System.EventHandler(this.lbl_saldo_Click);
             // 
             // lbl_saludo_b
             // 
@@ -259,19 +264,57 @@ namespace patronesFinal
             this.label6Concepto.TabIndex = 31;
             this.label6Concepto.Text = "Concepto (opcional)";
             // 
+            // tbRetirar
+            // 
+            this.tbRetirar.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbRetirar.Location = new System.Drawing.Point(38, 265);
+            this.tbRetirar.Multiline = true;
+            this.tbRetirar.Name = "tbRetirar";
+            this.tbRetirar.Size = new System.Drawing.Size(172, 31);
+            this.tbRetirar.TabIndex = 32;
+            this.tbRetirar.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(60, 335);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(146, 33);
+            this.button4.TabIndex = 33;
+            this.button4.Text = "&Retirar";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click_2);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(38, 246);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(111, 13);
+            this.label6.TabIndex = 34;
+            this.label6.Text = "Cuando desea retirar?";
+            // 
+            // bt_return_retiros_a_inicio
+            // 
+            this.bt_return_retiros_a_inicio.BackColor = System.Drawing.Color.Transparent;
+            this.bt_return_retiros_a_inicio.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bt_return_retiros_a_inicio.BackgroundImage")));
+            this.bt_return_retiros_a_inicio.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bt_return_retiros_a_inicio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_return_retiros_a_inicio.Location = new System.Drawing.Point(0, 450);
+            this.bt_return_retiros_a_inicio.Name = "bt_return_retiros_a_inicio";
+            this.bt_return_retiros_a_inicio.Size = new System.Drawing.Size(252, 36);
+            this.bt_return_retiros_a_inicio.TabIndex = 35;
+            this.bt_return_retiros_a_inicio.UseVisualStyleBackColor = false;
+            this.bt_return_retiros_a_inicio.Click += new System.EventHandler(this.bt_return_retiros_a_inicio_Click);
+            // 
             // Form3
             // 
             this.ClientSize = new System.Drawing.Size(251, 486);
             this.ControlBox = false;
-            this.Controls.Add(this.label6Concepto);
-            this.Controls.Add(this.label6Cantidad);
-            this.Controls.Add(this.label6NTarjeta);
-            this.Controls.Add(this.textBox3Tarjeta);
-            this.Controls.Add(this.textBox2Cantidad);
-            this.Controls.Add(this.checkBox1TokenMovil);
             this.Controls.Add(this.btEnviar);
-            this.Controls.Add(this.textBox1Concepto);
-            this.Controls.Add(this.bt_return_general);
+            this.Controls.Add(this.bt_return_retiros_a_inicio);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.button4);
+            this.Controls.Add(this.tbRetirar);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.pictureBox2);
@@ -279,10 +322,18 @@ namespace patronesFinal
             this.Controls.Add(this.lbl_saludo_b);
             this.Controls.Add(this.lbl_saldo);
             this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.bt_return_login);
+            this.Controls.Add(this.checkBox1TokenMovil);
             this.Controls.Add(this.button5Transferir);
             this.Controls.Add(this.button6Pagar);
-            this.Controls.Add(this.bt_return_login);
             this.Controls.Add(this.button4Retirar);
+            this.Controls.Add(this.textBox3Tarjeta);
+            this.Controls.Add(this.label6NTarjeta);
+            this.Controls.Add(this.label6Cantidad);
+            this.Controls.Add(this.textBox2Cantidad);
+            this.Controls.Add(this.label6Concepto);
+            this.Controls.Add(this.textBox1Concepto);
+            this.Controls.Add(this.bt_return_general);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form3";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -324,5 +375,9 @@ namespace patronesFinal
         private System.Windows.Forms.Button bt_return_general;
         private System.Windows.Forms.Label label6Cantidad;
         private System.Windows.Forms.Label label6Concepto;
+        private System.Windows.Forms.TextBox tbRetirar;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Button bt_return_retiros_a_inicio;
     }
 }

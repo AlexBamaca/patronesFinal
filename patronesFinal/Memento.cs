@@ -14,19 +14,19 @@ namespace patronesFinal
     }
     public class Memento : IDatos
     {
-        private string ntarjeta;
+        private string ntarjeta = "";
         public string NTarjeta
         {
             get { return ntarjeta; }
             set { ntarjeta = value; }
         }
-        private string cantidad;
+        private string cantidad = "";
         public string Cantidad 
         { 
             get { return cantidad; }
             set { cantidad = value; }
         }
-        private string concepto;
+        private string concepto = "";
         public string Concepto 
         {
             get { return concepto; }
@@ -36,15 +36,8 @@ namespace patronesFinal
         private MementoCopia copia = new MementoCopia();
         public MementoCopia Copia
         {
-            get 
-            { 
-                return copia; 
-            }
-            set 
-            { 
-                copia = value; 
-            }
-            
+            get { return copia; }
+            set { copia = value; }            
         }
 
         public void Revertir()
